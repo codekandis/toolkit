@@ -6,7 +6,12 @@
 		"library",
 		"toolkit",
 		"interfaces",
-		"classes"
+		"classes",
+		"converters",
+		"unidirectional",
+		"uni-directional",
+		"bidirectional",
+		"bi-directional"
 	],
 	"minimum-stability": "stable",
 	"prefer-stable": true,
