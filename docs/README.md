@@ -3,13 +3,21 @@
 ## Index
 
 * [Converters](#converters)
+* [Validators](#validators)
 
 ## Converters
 
 * [Usage][doclink-converters-usage]
 * [Built-in converter reference][doclink-converters-built-in-converter-reference]
 
+## Validators
+
+* [Usage][doclink-validators-usage]
+* [Built-in validator reference][doclink-validators-built-in-validator-reference]
+
 
 
 [doclink-converters-built-in-converter-reference]: ./converters/built-in-converter-reference.md
 [doclink-converters-usage]: ./converters/usage.md
+[doclink-validators-built-in-validator-reference]: ./validators/built-in-validator-reference.md
+[doclink-validators-usage]: ./validators/usage.md
