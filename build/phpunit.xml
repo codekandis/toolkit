@@ -18,6 +18,9 @@
 		<testsuite name="codekandis/toolkit - Converters">
 			<directory>../tests/Converters</directory>
 		</testsuite>
+		<testsuite name="codekandis/toolkit - Validators">
+			<directory>../tests/Validators</directory>
+		</testsuite>
 	</testsuites>
 	<source>
 		<include>
