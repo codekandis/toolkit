@@ -15,8 +15,8 @@
 	colors="true"
 	cacheResult="false">
 	<testsuites>
-		<testsuite name="codekandis/toolkit">
-			<directory>../tests</directory>
+		<testsuite name="codekandis/toolkit - Converters">
+			<directory>../tests/Converters</directory>
 		</testsuite>
 	</testsuites>
 	<source>
