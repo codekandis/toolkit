@@ -12,7 +12,8 @@
 		"uni-directional",
 		"bidirectional",
 		"bi-directional",
-		"validators"
+		"validators",
+		"regular-expressions"
 	],
 	"minimum-stability": "stable",
 	"prefer-stable": true,
