@@ -1,0 +1,41 @@
+<?php declare( strict_types = 1 );
+namespace CodeKandis\ToolKit\Converters\UniDirectionalConverters;
+
+use CodeKandis\ToolKit\Converters\AbstractConverter;
+use CodeKandis\ToolKit\Converters\ValidValues;
+use CodeKandis\ToolKit\Validators\IsMatchingRegularExpressionValidator;
+use CodeKandis\ToolKit\Validators\IsStringValidator;
+use Override;
+
+/**
+ * Represents a unidirectional converter converting a `float string` value matching the regular expression {@link ValidValues::$regExFloatString} into its corresponding `float` value.
+ * @package codekandis/toolkit
+ * @author Christian Ramelow <info@codekandis.net>
+ */
+class FloatStringToFloatUniDirectionalConverter extends AbstractConverter implements FloatStringToFloatUniDirectionalConverterInterface
+{
+	/**
+	 * @inheritdoc
+	 */
+	#[Override]
+	public function convert( mixed $value ): float
+	{
+		if (
+			false === new IsStringValidator()
+				->validate( $value )
+		)
+		{
+			throw $this->getInvalidTypeException( $value, $this->expectedTypes->string );
+		}
+
+		if (
+			false === new IsMatchingRegularExpressionValidator( $this->validValues->regExFloatString )
+				->validate( $value )
+		)
+		{
+			throw $this->getInvalidValueException( $value, $this->validValues->regExFloatString );
+		}
+
+		return (float) $value;
+	}
+}
